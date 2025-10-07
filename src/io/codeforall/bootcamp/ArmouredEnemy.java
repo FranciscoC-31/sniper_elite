@@ -25,7 +25,7 @@ public class ArmouredEnemy extends Enemy{
 
     @Override
     public String toString(){
-        return "Spotted an enemy soldier. And this on has armour!\n" +
+        return "Spotted an enemy soldier. And this one has armour!\n" +
                 "It has " + getHealth() + " Hit points and " + armour + " armour Hit points.";
     }
 }
