@@ -10,16 +10,8 @@ public class SniperRifle {
             System.out.println("Missed the shot!");
         } else {
             bulletDamage = (int) ((Math.random() * 5) + 5);
-            if (destroyable instanceof SoldierEnemy) {
-                System.out.println("Shot it! Took : " + bulletDamage + " damage.");
-                destroyable.hit(bulletDamage);
-            } else if (destroyable instanceof  ArmouredEnemy) {
-                System.out.println("Shot it! Took : " + bulletDamage + " damage.");
-                destroyable.hit(bulletDamage);
-            } else if (destroyable instanceof Barrel) {
-                System.out.println("Shot it! Took : " + bulletDamage + " damage.");
-                destroyable.hit(bulletDamage);
-            }
+            System.out.println("Shot it! Took: " + bulletDamage + " damage.");
+            destroyable.hit(bulletDamage);
         }
     }
 

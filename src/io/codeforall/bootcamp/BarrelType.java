@@ -8,7 +8,7 @@ public enum BarrelType {
     private int maxDamage;
 
     //constructor
-    private BarrelType(int maxDamage){
+    BarrelType(int maxDamage){
         this.maxDamage = maxDamage;
     }
 

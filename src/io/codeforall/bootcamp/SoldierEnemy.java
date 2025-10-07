@@ -8,7 +8,7 @@ public class SoldierEnemy extends Enemy{
 
     @Override
     public String toString(){
-        return "This one is a regular soldier.\n" +
+        return "Spotted an enemy soldier.\n" +
                 "It has " + getHealth() + " Hit points.";
     }
 }

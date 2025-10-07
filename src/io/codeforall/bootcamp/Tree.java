@@ -8,6 +8,7 @@ public class Tree extends GameObject {
 
     @Override
     public String toString(){
-        return "It's a tree! Don't shoot it.";
+        return "Spotted a tree. It's a decoy.\n" +
+                "Moving on to next target.\n";
     }
 }

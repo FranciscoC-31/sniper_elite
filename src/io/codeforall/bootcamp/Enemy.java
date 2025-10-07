@@ -20,10 +20,12 @@ public class Enemy extends GameObject implements Destroyable {
     @Override
     public void hit(int bulletDamage){
         health -= bulletDamage;
-        if (health <= 0){
+        if (health < 5 && health > 0){
+            System.out.println("FINISH HIM!");
+        }else if (health <= 0){
             health = 0;
             dead = true;
-            System.out.println("Confirmed Kill\n");
+            System.out.println("Confirmed Kill. Moving on to next target.\n");
         }
     }
 

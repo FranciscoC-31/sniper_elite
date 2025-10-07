@@ -35,23 +35,12 @@ public class Barrel extends GameObject implements Destroyable{
             destroyed = true;
             System.out.println("Barrel Destroyed!\n");
         }
-        /*
-        if (barrelType.getMaxDamage() > currentDamage){
-            currentDamage += bulletDamage;
-        } else {
-            destroyed = true;
-            System.out.println("Barrel Destroyed!\n");
-        }*/
-    }
-
-    public int getMaxDamage(){
-        return barrelType.getMaxDamage();
     }
 
     @Override
     public String toString(){
-        return "This one is a " + barrelType + " barrel.\n" +
-                "It has " + getMaxDamage() + " Hit points. Destroy it!";
+        return "Spotted a " + barrelType + " barrel.\n" +
+                "It has " + barrelType.getMaxDamage() + " Hit points. MUST obliterate it!";
     }
 
     @Override

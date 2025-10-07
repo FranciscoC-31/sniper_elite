@@ -14,7 +14,7 @@ public class ArmouredEnemy extends Enemy{
             armour -= bulletDamage;
             System.out.println("It hit the armour!");
 
-            if (armour <= 0) {
+            if (armour < 0) {
                 System.out.println("Armour destroyed!");
             }
         }
@@ -25,7 +25,7 @@ public class ArmouredEnemy extends Enemy{
 
     @Override
     public String toString(){
-        return "This is a soldier, but be careful! It has armour!\n" +
-                "It has " + getHealth() + " Hit points.";
+        return "Spotted an enemy soldier. And this on has armour!\n" +
+                "It has " + getHealth() + " Hit points and " + armour + " armour Hit points.";
     }
 }
